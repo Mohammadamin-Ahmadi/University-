@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MohammadaminAhmadi</title>
+
+  <!-- فونت -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- استایل جداگانه -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="--bg-image: url('assets/bg.jpg');">
+
+  <!-- input سوییچ زبان باید قبل از header باشد -->
+  <input type="checkbox" id="lang-toggle" aria-hidden="false" />
+
+  <!-- هدر -->
+  <header class="main-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark">MA</span>
+        <span class="logo-text">MohammadaminAhmadi</span>
+      </div>
+
+      <label for="lang-toggle" class="lang-switch" role="switch" aria-checked="false">
+        <span class="lang-option fa-label">FA</span>
+        <span class="lang-option en-label">EN</span>
+        <span class="lang-knob" aria-hidden="true"></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- محتوای اصلی -->
+  <main class="page">
+
+    <!-- هرو -->
+    <section class="hero card scroll-fade-right">
+      <div class="hero-info fa" lang="fa">
+        <div class="hero-text">
+          <h1>محمدامین احمدی</h1>
+          <h2>Network & IT Infrastructure Specialist</h2>
+          <p>من یک متخصص زیرساخت شبکه و IT هستم که روی طراحی، پیاده‌سازی و عیب‌یابی شبکه‌های کابلی و بی‌سیم، VoIP و مجازی‌سازی تمرکز دارم.</p>
+          <div style="margin-top:10px;">
+            <button class="btn" id="primary-cta">درخواست مشاوره</button>
+            <button class="btn ghost" id="download-resume-hero">دانلود رزومه</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-info en" lang="en">
+        <div class="hero-text">
+          <h1>Mohammadamin Ahmadi</h1>
+          <h2>Network & IT Infrastructure Specialist</h2>
+          <p>I design and maintain resilient networks, VoIP systems, and virtualization platforms to solve real-world problems.</p>
+          <div style="margin-top:10px;">
+            <button class="btn" id="primary-cta-en">Request Consultation</button>
+            <button class="btn ghost" id="download-resume-hero-en">Download Resume</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-avatar">
+        <div class="avatar-circle">
+          <!-- عکس پروفایل محلی: مسیر نسبی به فایل داخل پروژه -->
+          <img src="assets/profile.jpg" alt="Profile photo of Mohammadamin Ahmadi" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- مهارت‌ها (نمونه کارت‌ها) -->
+    <section class="section">
+      <h3 class="section-title fa">مهارت‌ها</h3>
+      <h3 class="section-title en">Skills</h3>
+      <div class="card-grid">
+        <article class="card scroll-fade-right">
+          <h4 class="fa">شبکه و زیرساخت</h4>
+          <h4 class="en">Networking & Infrastructure</h4>
+          <ul class="fa">
+            <li>طراحی و پیاده‌سازی شبکه‌های LAN و WLAN</li>
+            <li>پیکربندی سوییچ‌ها، VLAN، Trunk، Routing</li>
+            <li>راه‌اندازی سرویس‌های زیرساختی (DHCP, DNS, VPN)</li>
+            <li>راه‌اندازی و نگهداری سرویس‌دهنده‌ها و مجازی‌سازی</li>
+          </ul>
+          <ul class="en">
+            <li>Design & implementation of LAN/WLAN topologies</li>
+            <li>Switching, VLANs, trunking, and basic routing</li>
+            <li>Core infrastructure services (DHCP, DNS, VPN)</li>
+            <li>Server deployment and virtualization platforms</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section" id="case-studies">
+      <h3 class="section-title fa">پروژه‌های کلیدی</h3>
+      <h3 class="section-title en">Case Studies</h3>
+
+      <div class="card-grid">
+        <article class="card case-card scroll-fade-right">
+          <h4 class="fa">پیاده‌سازی شبکه سازمانی چندسایتی</h4>
+          <h4 class="en">Multi-site Enterprise Network</h4>
+          <p class="fa">طراحی توپولوژی، پیاده‌سازی VLAN و لینک‌های PTP؛ کاهش زمان قطعی تا ۴۰٪ و بهبود پهنای باند موثر.</p>
+          <p class="en">Designed topology, VLANs and PTP links; reduced downtime by 40% and improved effective bandwidth.</p>
+          <div class="case-meta">
+            <span class="muted">Tech: MikroTik, VLAN, PTP</span>
+            <a class="btn ghost" href="#" aria-label="Read case study">جزئیات</a>
+          </div>
+        </article>
+
+        <article class="card case-card scroll-fade-right">
+          <h4 class="fa">مرکز تماس مبتنی بر Issabel</h4>
+          <h4 class="en">Issabel Call Center</h4>
+          <p class="fa">راه‌اندازی صف‌ها، ضبط مکالمات و داشبورد مانیتورینگ؛ افزایش پاسخگویی و کاهش زمان انتظار.</p>
+          <p class="en">Implemented queues, call recording and monitoring dashboard; improved responsiveness and reduced wait times.</p>
+          <div class="case-meta">
+            <span class="muted">Tech: Issabel, Asterisk, Monitoring</span>
+            <a class="btn ghost" href="#" aria-label="Read case study">جزئیات</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skill Bars -->
+    <section class="section" id="skills-bars">
+      <h3 class="section-title fa">سطح مهارت‌ها</h3>
+      <h3 class="section-title en">Skill Levels</h3>
+
+      <div class="card">
+        <div class="skill">
+          <div class="skill-head">
+            <span class="skill-name">MikroTik</span>
+            <span class="skill-value">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span class="skill-name">VoIP / Issabel</span>
+            <span class="skill-value">85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span class="skill-name">Python / Automation</span>
+            <span class="skill-value">75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <h3 class="section-title fa">نظرات مشتریان</h3>
+      <h3 class="section-title en">Testimonials</h3>
+
+      <div class="card testimonial-card">
+        <div class="testimonial-slider">
+          <div class="testimonial-item">
+            <p class="fa">«محمدامین با دانش فنی بالا و سرعت عمل، شبکه ما را پایدار کرد.»</p>
+            <p class="en">"Mohammadamin stabilized our network with deep expertise and fast delivery."</p>
+            <div class="testimonial-author">— شرکت نمونه</div>
+          </div>
+          <div class="testimonial-item">
+            <p class="fa">«پروژه VoIP با کیفیت و بدون قطعی اجرا شد؛ گزارشات و مانیتورینگ عالی بود.»</p>
+            <p class="en">"VoIP deployment was flawless; monitoring and reporting were excellent."</p>
+            <div class="testimonial-author">— مشتری دیگر</div>
+          </div>
+        </div>
+
+        <div class="testimonial-controls">
+          <button class="btn ghost" data-test-prev aria-label="Previous testimonial">قبلی</button>
+          <button class="btn" data-test-next aria-label="Next testimonial">بعدی</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <h3 class="section-title fa">خدمات</h3>
+      <h3 class="section-title en">Services</h3>
+
+      <div class="card-grid">
+        <div class="card service-card scroll-fade-right">
+          <h4 class="fa">طراحی شبکه</h4>
+          <h4 class="en">Network Design</h4>
+          <p class="fa">تحلیل نیاز، طراحی توپولوژی و مستندسازی کامل.</p>
+          <p class="en">Requirements analysis, topology design and full documentation.</p>
+        </div>
+
+        <div class="card service-card scroll-fade-right">
+          <h4 class="fa">پیاده‌سازی VoIP</h4>
+          <h4 class="en">VoIP Deployment</h4>
+          <p class="fa">راه‌اندازی Issabel/Asterisk، ترانک و صف‌های تماس.</p>
+          <p class="en">Issabel/Asterisk setup, trunking and call queues.</p>
+        </div>
+
+        <div class="card service-card scroll-fade-right">
+          <h4 class="fa">اتوماسیون و اسکریپت</h4>
+          <h4 class="en">Automation & Scripting</h4>
+          <p class="fa">اسکریپت‌های Python برای مانیتورینگ و اتوماسیون وظایف.</p>
+          <p class="en">Python scripts for monitoring and task automation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section" id="contact-form">
+      <h3 class="section-title fa">درخواست مشاوره</h3>
+      <h3 class="section-title en">Request Consultation</h3>
+
+      <div class="card">
+        <form id="quick-contact" class="contact-form" novalidate>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <input type="text" name="name" placeholder="نام و نام خانوادگی" aria-label="نام" required style="flex:1;">
+            <input type="email" name="email" placeholder="ایمیل" aria-label="ایمیل" required style="flex:1;">
+          </div>
+          <textarea name="message" placeholder="خلاصهٔ درخواست یا سوال" aria-label="پیام" rows="4" style="width:100%;margin-top:8px;"></textarea>
+          <div style="margin-top:8px;display:flex;gap:8px;align-items:center;">
+            <button type="submit" class="btn">ارسال</button>
+            <button type="button" id="download-resume" class="btn ghost">دانلود رزومه</button>
+            <span class="small muted" id="contact-status" style="margin-left:8px;"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- تحصیلات، گواهی‌نامه‌ها، زبان‌ها و تمرکز حرفه‌ای -->
+    <section class="section">
+      <h3 class="section-title fa">تحصیلات</h3>
+      <h3 class="section-title en">Education</h3>
+      <div class="card-grid narrow">
+        <article class="card">
+          <h4 class="fa">کارشناسی</h4>
+          <h4 class="en">Bachelor’s Degree</h4>
+          <p class="fa">مهندسی کامپیوتر / فناوری اطلاعات — دانشگاه ...</p>
+          <p class="en">B.Sc. in Computer Engineering / IT — University ...</p>
+        </article>
+        <article class="card">
+          <h4 class="fa">فوق‌دیپلم / دوره‌های تخصصی</h4>
+          <h4 class="en">Associate / Specialized Programs</h4>
+          <p class="fa">دوره‌های تخصصی در شبکه، VoIP و مجازی‌سازی.</p>
+          <p class="en">Specialized training in networking, VoIP and virtualization.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 class="section-title fa">گواهی‌نامه‌ها</h3>
+      <h3 class="section-title en">Certificates</h3>
+      <div class="card">
+        <ul class="fa">
+          <li>دوره‌های تخصصی شبکه و زیرساخت IT</li>
+          <li>آموزش و کار با MikroTik و لینک‌های بی‌سیم</li>
+          <li>آموزش VoIP و Issabel/Asterisk</li>
+          <li>دوره‌های تکمیلی برنامه‌نویسی و اتوماسیون</li>
+        </ul>
+        <ul class="en">
+          <li>Specialized courses in networking and IT infrastructure</li>
+          <li>Training on MikroTik routers and wireless links</li>
+          <li>VoIP and Issabel/Asterisk workshops</li>
+          <li>Complementary programming and automation courses</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section two-column">
+      <div>
+        <h3 class="section-title fa">زبان‌ها</h3>
+        <h3 class="section-title en">Languages</h3>
+        <div class="card">
+          <ul class="fa"><li>فارسی – روان</li><li>انگلیسی – در سطح کاری</li></ul>
+          <ul class="en"><li>Persian – Native</li><li>English – Working proficiency</li></ul>
+        </div>
+      </div>
+      <div>
+        <h3 class="section-title fa">علاقه‌مندی‌ها</h3>
+        <h3 class="section-title en">Interests</h3>
+        <div class="card">
+          <ul class="fa"><li>طراحی سناریوهای شبکه در شرایط واقعی</li><li>ترکیب شبکه، VoIP و اتوماسیون</li></ul>
+          <ul class="en"><li>Designing realistic network scenarios</li><li>Combining networking, VoIP and automation</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 class="section-title fa">تمرکز حرفه‌ای</h3>
+      <h3 class="section-title en">Professional Focus</h3>
+      <div class="card-grid">
+        <article class="card">
+          <h4 class="fa">شبکه و Mikrotik</h4>
+          <h4 class="en">Networking & MikroTik</h4>
+          <p class="fa">تمرکز روی طراحی و پیاده‌سازی شبکه‌های محلی، لینک‌های رادیویی و مدیریت ترافیک.</p>
+          <p class="en">Focus on local networks, radio links and traffic management using MikroTik.</p>
+        </article>
+        <article class="card">
+          <h4 class="fa">VoIP و ارتباطات یکپارچه</h4>
+          <h4 class="en">VoIP & Unified Communications</h4>
+          <p class="fa">طراحی مراکز تماس، مسیردهی تماس‌ها و مانیتورینگ کیفیت مبتنی بر Issabel/Asterisk.</p>
+          <p class="en">Designing call centers, routing and quality monitoring based on Issabel/Asterisk.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- اطلاعات تماس -->
+    <section class="section">
+      <h3 class="section-title fa">اطلاعات تماس</h3>
+      <h3 class="section-title en">Contact</h3>
+      <div class="card contact-card">
+        <div class="fa">
+          <p><strong>ایمیل:</strong> mhmdamynahmdy123@gmail.com</p>
+          <p><strong>تلفن:</strong> 09397627152</p>
+          <p><strong>مکان:</strong> هرمزگان، ایران</p>
+        </div>
+        <div class="en">
+          <p><strong>Email:</strong> mhmdamynahmdy123@gmail.com</p>
+          <p><strong>Phone:</strong> +989397627152</p>
+          <p><strong>Location:</strong> Hormozgan, Iran</p>
+        </div>
+
+        <div class="social">
+          <a href="https://instagram.com/M._.amin1384" class="social-link" target="_blank">Instagram</a>
+          <a href="https://github.com/Mohammadamin-Ahmadi" class="social-link" target="_blank">GitHub</a>
+          <a href="https://t.me/M_amin1384" class="social-link" target="_blank">Telegram</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="fa">تمام حقوق برای MohammadaminAhmadi محفوظ است.</p>
+    <p class="en">All rights reserved by MohammadaminAhmadi.</p>
+  </footer>
+
+  <!-- اسکریپت: زبان، انیمیشن اسکرول، testimonials، فرم و دانلود رزومه -->
+  <script>
+  (function(){
+    // زبان: همگام‌سازی aria و نمایش
+    const toggle = document.getElementById('lang-toggle');
+    const label = document.querySelector('.lang-switch');
+    const faEls = document.querySelectorAll('.fa');
+    const enEls = document.querySelectorAll('.en');
+
+    function updateLangState(){
+      const checked = toggle.checked;
+      if(label) label.setAttribute('aria-checked', checked ? 'true' : 'false');
+      faEls.forEach(el => el.setAttribute('aria-hidden', checked ? 'true' : 'false'));
+      enEls.forEach(el => el.setAttribute('aria-hidden', checked ? 'false' : 'true'));
+    }
+    updateLangState();
+    toggle.addEventListener('change', updateLangState);
+
+    // IntersectionObserver برای انیمیشن ورود از راست
+    const scrollEls = document.querySelectorAll('.scroll-fade-right');
+    if('IntersectionObserver' in window){
+      const obs = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      scrollEls.forEach(el => obs.observe(el));
+    } else {
+      scrollEls.forEach(el => el.classList.add('visible'));
+    }
+
+    // Testimonials slider
+    const slider = document.querySelector('.testimonial-slider');
+    const items = slider ? slider.querySelectorAll('.testimonial-item') : [];
+    let idx = 0;
+    const prevBtn = document.querySelector('[data-test-prev]');
+    const nextBtn = document.querySelector('[data-test-next]');
+
+    function showTestimonial(i){
+      if(!slider || items.length === 0) return;
+      idx = (i + items.length) % items.length;
+      slider.style.transform = `translateX(-${idx * 100}%)`;
+    }
+    if(prevBtn) prevBtn.addEventListener('click', () => showTestimonial(idx - 1));
+    if(nextBtn) nextBtn.addEventListener('click', () => showTestimonial(idx + 1));
+    if(items.length > 1){
+      setInterval(() => showTestimonial(idx + 1), 6000);
+    }
+
+    // Contact form (demo)
+    const form = document.getElementById('quick-contact');
+    const status = document.getElementById('contact-status');
+    const downloadBtn = document.getElementById('download-resume');
+    const downloadHero = document.getElementById('download-resume-hero');
+    const downloadHeroEn = document.getElementById('download-resume-hero-en');
+
+    if(form){
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        const fd = new FormData(form);
+        if(!fd.get('name') || !fd.get('email') || !fd.get('message')){
+          status.textContent = 'لطفاً همهٔ فیلدها را پر کنید.';
+          status.style.color = 'var(--accent-3)';
+          return;
+        }
+        status.textContent = 'در حال ارسال...';
+        status.style.color = 'var(--muted)';
+        setTimeout(() => {
+          status.textContent = 'پیام شما ارسال شد. متشکرم!';
+          status.style.color = 'green';
+          form.reset();
+        }, 900);
+      });
+    }
+
+    // Resume download (demo) — جایگزین کن با URL واقعی
+    function openResume(){
+      const resumeUrl = 'PASTE_RESUME_URL_HERE';
+      if(resumeUrl && resumeUrl !== 'PASTE_RESUME_URL_HERE'){
+        window.open(resumeUrl, '_blank');
+      } else {
+        alert('لطفاً آدرس رزومه را در کد قرار دهید یا فایل را آپلود کنید.');
+      }
+    }
+    if(downloadBtn) downloadBtn.addEventListener('click', openResume);
+    if(downloadHero) downloadHero.addEventListener('click', openResume);
+    if(downloadHeroEn) downloadHeroEn.addEventListener('click', openResume);
+
+    // Primary CTA scroll to contact form
+    const primaryCta = document.getElementById('primary-cta');
+    const primaryCtaEn = document.getElementById('primary-cta-en');
+    const contactSection = document.getElementById('contact-form');
+    function scrollToContact(){ if(contactSection) contactSection.scrollIntoView({behavior:'smooth'}); }
+    if(primaryCta) primaryCta.addEventListener('click', scrollToContact);
+    if(primaryCtaEn) primaryCtaEn.addEventListener('click', scrollToContact);
+
+  })();
+  </script>
+</body>
+</html>
